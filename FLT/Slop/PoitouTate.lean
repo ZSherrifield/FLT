@@ -22,6 +22,11 @@ public import FLT.Slop.PoitouTate.PoitouTateStatement
 # Poitou–Tate
 
 Blueprint-driven scaffold of the Poitou–Tate nine-term exact sequence, following
-`FLT/Slop/PoitouTate/PTblueprint.tex`. The headline statement is
+`PTblueprint.tex` (deleted in commit `68f7a3f`; recover with
+`git show 68f7a3f^:FLT/Slop/PoitouTate/PTblueprint.tex`). The headline statement is
 `NumberField.PoitouTate.poitouTate` in `PoitouTateStatement.lean`.
+
+See `FLT/Slop/PoitouTate/RECONCILIATION.md` for the reconciliation of this folder with the
+`PoitouTateLogos.lean` draft and the plan for reaching a sorry-free statement with explicit
+maps.
 -/

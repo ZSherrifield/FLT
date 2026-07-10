@@ -82,11 +82,11 @@ noncomputable def localDualRep : TopRep 𝔽 (Field.absoluteGaloisGroup (v.adicC
 /-- The local dual of a finite module is finite (values are roots of unity of order dividing
 `#N`). -/
 instance finite_localDualRep [Finite N] : Finite ↥(localDualRep 𝔽 F v N) :=
-  sorry
+  inferInstanceAs (Finite (↥N →+ Additive (AlgebraicClosure (v.adicCompletion F))ˣ))
 
 /-- The local dual carries the discrete topology by construction. -/
 instance discreteTopology_localDualRep : DiscreteTopology ↥(localDualRep 𝔽 F v N) :=
-  sorry
+  ⟨rfl⟩
 
 /-- **Milne, Theorem 2.1**: for a finite discrete `G_v`-module `N`, the continuous cohomology
 `Hⁱ(G_v, N)` is finite for all `i`. -/
